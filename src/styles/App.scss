@@ -1,0 +1,171 @@
+$width: 750px;
+$height: 0.7 * $width;
+
+$scientist-color: #18466b;
+
+.card {
+  width: $width;
+  height: $height;
+  background-color: white;
+  border: black 1px solid;
+  font-family: 'Eurostile', sans-serif;
+  .header{
+    display: flex;
+    height: 0.17 * $height;
+    color: white;
+    .title{
+      margin: auto;
+      font-size: 2.5em;
+      font-weight: bolder;
+    }
+    .level-1{
+      background-image: url('/level-1.png');
+      background-repeat: no-repeat;
+      width: 0.106 * $width;
+      margin-left: -0.106 * $width;
+    }
+    .level-2{
+      background-image: url('/level-2.png');
+      background-repeat: no-repeat;
+      width: 0.106 * $width;
+      margin-left: -0.106 * $width;
+    }
+  }
+  .body{
+    display: flex;
+    flex-direction: column;
+    .tech-icon {
+      width: 0.12 * $width;
+      height: 0.12 * $width;
+      margin-left: 40px;
+      margin-top: -50px;
+    }
+    .harvest{
+      background-image: url('/harvest.png');
+      background-repeat: no-repeat;
+    }
+    .description{
+      width: 0.5 * $width;
+      height: 0.38 * $height;
+      margin: auto;
+      text-align: center;
+      font-size: 2em;
+      line-height: 1.3;
+    }
+    .flavor-text{
+      width: 0.6 * $width;
+      height: 0.16 * $height;
+      margin: auto;
+      color: $scientist-color;
+      font-style: italic;
+      text-align: center;
+      font-size: 1.5em;
+      line-height: 1.3;
+    }
+    .tech-action{
+      margin: auto;
+      height: 0.095 * $height;
+      margin-top: -20px;
+      margin-bottom: 9px;
+    }
+    .tech-action-icon{
+      background-image: url('/tech-action-icon.png');
+      background-repeat: no-repeat;
+      width: 0.066 * $width;
+    }
+    .separator{
+      width: 0.75 * $width;
+      margin: auto;
+      display: block;
+      height: 15px;
+      border-top: 1px solid $scientist-color;
+    }
+  }
+  .prerequisite-container{
+    transform: rotate(90deg);
+    width: 0.3 * $width;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-top: 2px solid $scientist-color;
+    text-align: center;
+    line-height: 1.2em;
+    margin-left: -0.1 * $width;
+    margin-top: -0.38 * $height;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      border-top: 2px solid $scientist-color;
+      width: 0.11 * $width;
+      transform: rotate(120deg);
+      transform-origin: 3px -4px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      border-top: 2px solid $scientist-color;
+      width: 0.11 * $width;
+      transform: rotate(-120deg);
+      transform-origin: 135px -73px;
+    }
+
+    .prerequisite{
+    }
+    .harvest{
+      color: #47bfab;
+    }
+  }
+  .cost-container{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    height: 0.11 * $height;
+    max-width: 0.62 * $width;
+    border-top: 2px solid $scientist-color;
+    padding-right: 15px;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      border-top: 2px solid $scientist-color;
+      width: 0.1 * $width;
+      transform: rotate(130deg);
+      transform-origin: 1px 0px;
+    }
+    .cost{
+      margin: 5px 15px 5px 15px;
+      width: 0.061 * $width;
+      height: 0.061 * $width;
+    }
+    .cost + .cost::before{
+      align-items: center;
+      display: flex;
+      content: '+';
+      font-size: 2em;
+      margin-left: -23px;
+      height: 100%;
+    }
+    .food-1{
+      background-image: url('/food-1.png');
+      background-repeat: no-repeat;
+    }
+    .food-2{
+      background-image: url('/food-2.png');
+      background-repeat: no-repeat;
+    }
+    .matter-1{
+      background-image: url('/matter-1.png');
+      background-repeat: no-repeat;
+    }
+    .matter-2{
+      background-image: url('/matter-2.png');
+      background-repeat: no-repeat;
+    }
+  }
+  .header.scientist{
+    background-color: $scientist-color;
+  }
+}
