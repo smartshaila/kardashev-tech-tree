@@ -73,6 +73,18 @@ $scientist-color: #18466b;
       background-repeat: no-repeat;
       width: 0.066 * $width;
     }
+    .flip-tech{
+      margin: auto;
+      height: 0.103 * $height;
+      margin-top: -10px;
+      margin-bottom: -45px;
+      margin-left: 20px;
+    }
+    .flip-tech-icon{
+      background-image: url('/flip-tech-icon.png');
+      background-repeat: no-repeat;
+      width: 0.072 * $width;
+    }
     .separator{
       width: 0.75 * $width;
       margin: auto;

@@ -17,6 +17,11 @@ class Body extends Component {
             'tech-action-icon': this.props.tech_action
         });
 
+        const flipTech = classnames({
+            'flip-tech': true,
+            'flip-tech-icon': this.props.flip_tech
+        });
+
         return (
             <div className={bodyClasses}>
                 <div className={techLineClasses} />
@@ -24,6 +29,7 @@ class Body extends Component {
                 <div className='description' dangerouslySetInnerHTML={{__html: this.props.description}} />
                 <div className='separator' />
                 <div className='flavor-text'>{this.props.flavor_text}</div>
+                <div className={flipTech}/>
             </div>
         );
     }

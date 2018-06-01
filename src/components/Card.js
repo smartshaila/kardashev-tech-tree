@@ -11,7 +11,7 @@ class Card extends Component {
         return (
             <div className="card" id={this.props.id}>
                 <Header role={this.props.role} title={this.props.title} level={this.props.level} />
-                <Body description={this.props.description} flavor_text={this.props.flavor_text} tech_action={this.props.tech_action} tech_line={this.props.tech_line}/>
+                <Body description={this.props.description} flavor_text={this.props.flavor_text} tech_action={this.props.tech_action} tech_line={this.props.tech_line} flip_tech={this.props.flip_tech}/>
                 <CostContainer costs={this.props.costs}/>
                 {prerequisiteContainer}
             </div>

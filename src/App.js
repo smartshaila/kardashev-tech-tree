@@ -5,6 +5,19 @@ import FileSaver from 'file-saver';
 
 const card = [
     {
+        id: 'scientist-harvest-rover',
+        role: 'scientist',
+        title: 'Harvest Rover',
+        level: 1,
+        tech_line: 'harvest',
+        description: 'Gain a matching resource per fleet on an <b>colonized</b> tile during harvest',
+        flavor_text: 'You have created machines capable of harvesting additional resources',
+        costs: [{resource_type: 'food', amount: 1}, {resource_type: 'matter', amount: 1}],
+        prerequisites: [],
+        tech_action: false,
+        flip_tech: true
+    },
+    {
         id: 'scientist-asteroid-mining',
         role: 'scientist',
         title: 'Asteroid Mining',
