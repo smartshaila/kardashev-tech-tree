@@ -41,6 +41,21 @@
     .card .body .terraform {
       background-image: url("/terraform.png");
       background-repeat: no-repeat; }
+    .card .body .scientist {
+      background-image: url("/scientist.png");
+      background-repeat: no-repeat; }
+    .card .body .military {
+      background-image: url("/military.png");
+      background-repeat: no-repeat; }
+    .card .body .defense {
+      background-image: url("/defense.png");
+      background-repeat: no-repeat; }
+    .card .body .resource {
+      background-image: url("/resource.png");
+      background-repeat: no-repeat; }
+    .card .body .attack {
+      background-image: url("/attack.png");
+      background-repeat: no-repeat; }
     .card .body .description {
       width: 427.5px;
       height: 199.5px;
@@ -110,10 +125,22 @@
       width: 82.5px;
       transform: rotate(-120deg);
       transform-origin: 135px -73px; }
+    .card .prerequisite-container .none {
+      color: #FFFFFF; }
     .card .prerequisite-container .harvest {
       color: #47bfab; }
     .card .prerequisite-container .terraform {
       color: #de6d26; }
+    .card .prerequisite-container .military {
+      color: #969696; }
+    .card .prerequisite-container .defense {
+      color: #c7b073; }
+    .card .prerequisite-container .resource {
+      color: #9bcb3d; }
+    .card .prerequisite-container .attack {
+      color: #eb87b7; }
+    .card .prerequisite-container .scientist {
+      color: #2971ab; }
   .card .cost-container {
     display: flex;
     flex-direction: row;
@@ -147,17 +174,26 @@
     .card .cost-container .food-2 {
       background-image: url("/food-2.png");
       background-repeat: no-repeat; }
+    .card .cost-container .food-3 {
+      background-image: url("/food-3.png");
+      background-repeat: no-repeat; }
     .card .cost-container .matter-1 {
       background-image: url("/matter-1.png");
       background-repeat: no-repeat; }
     .card .cost-container .matter-2 {
       background-image: url("/matter-2.png");
       background-repeat: no-repeat; }
+    .card .cost-container .matter-3 {
+      background-image: url("/matter-3.png");
+      background-repeat: no-repeat; }
     .card .cost-container .energy-1 {
       background-image: url("/energy-1.png");
       background-repeat: no-repeat; }
     .card .cost-container .energy-2 {
       background-image: url("/energy-2.png");
+      background-repeat: no-repeat; }
+    .card .cost-container .energy-3 {
+      background-image: url("/energy-3.png");
       background-repeat: no-repeat; }
     .card .cost-container .any-1 {
       background-image: url("/any-1.png");

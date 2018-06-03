@@ -54,6 +54,26 @@ $scientist-color: #18466b;
       background-image: url('/terraform.png');
       background-repeat: no-repeat;
     }
+    .scientist{
+      background-image: url('/scientist.png');
+      background-repeat: no-repeat;
+    }
+    .military{
+      background-image: url('/military.png');
+      background-repeat: no-repeat;
+    }
+    .defense{
+      background-image: url('/defense.png');
+      background-repeat: no-repeat;
+    }
+    .resource{
+      background-image: url('/resource.png');
+      background-repeat: no-repeat;
+    }
+    .attack{
+      background-image: url('/attack.png');
+      background-repeat: no-repeat;
+    }
     .description{
       width: 0.57 * $width;
       height: 0.38 * $height;
@@ -133,14 +153,31 @@ $scientist-color: #18466b;
       transform: rotate(-120deg);
       transform-origin: 135px -73px;
     }
-
     .prerequisite{
+    }
+    .none{
+      color: #FFFFFF;
     }
     .harvest{
       color: #47bfab;
     }
     .terraform{
       color: #de6d26;
+    }
+    .military{
+      color: #969696;
+    }
+    .defense{
+      color: #c7b073;
+    }
+    .resource{
+      color: #9bcb3d;
+    }
+    .attack{
+      color: #eb87b7;
+    }
+    .scientist{
+      color: #2971ab;
     }
   }
   .cost-container{
@@ -181,6 +218,10 @@ $scientist-color: #18466b;
       background-image: url('/food-2.png');
       background-repeat: no-repeat;
     }
+    .food-3{
+      background-image: url('/food-3.png');
+      background-repeat: no-repeat;
+    }
     .matter-1{
       background-image: url('/matter-1.png');
       background-repeat: no-repeat;
@@ -189,12 +230,20 @@ $scientist-color: #18466b;
       background-image: url('/matter-2.png');
       background-repeat: no-repeat;
     }
+    .matter-3{
+      background-image: url('/matter-3.png');
+      background-repeat: no-repeat;
+    }
     .energy-1{
       background-image: url('/energy-1.png');
       background-repeat: no-repeat;
     }
     .energy-2{
       background-image: url('/energy-2.png');
+      background-repeat: no-repeat;
+    }
+    .energy-3{
+      background-image: url('/energy-3.png');
       background-repeat: no-repeat;
     }
     .any-1{
