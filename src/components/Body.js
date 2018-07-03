@@ -22,13 +22,23 @@ class Body extends Component {
             'flip-tech-icon': this.props.flip_tech
         });
 
+        const flavorTextClasses = classnames({
+           'flavor-text': true,
+            [`flavor-${this.props.role}`]: true
+        });
+
+        const separatorClasses = classnames({
+           'separator': true,
+            [`separator-${this.props.role}`]: true
+        });
+
         return (
             <div className={bodyClasses}>
                 <div className={techLineClasses} />
                 <div className={techAction}/>
                 <div className='description' dangerouslySetInnerHTML={{__html: this.props.description}} />
-                <div className='separator' />
-                <div className='flavor-text'>{this.props.flavor_text}</div>
+                <div className={separatorClasses} />
+                <div className={flavorTextClasses}>{this.props.flavor_text}</div>
                 <div className={flipTech}/>
             </div>
         );

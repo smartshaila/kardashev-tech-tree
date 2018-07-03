@@ -2,6 +2,11 @@ $width: 750px;
 $height: 0.7 * $width;
 
 $scientist-color: #18466b;
+$pioneer-color: #603c18;
+$scavenger-color: #0c542a;
+$imperialist-color: #502f70;
+$warlord-color: #6f0d0f;
+$generalist-color: #776115;
 
 .card {
   width: $width;
@@ -54,10 +59,6 @@ $scientist-color: #18466b;
       background-image: url('/terraform.png');
       background-repeat: no-repeat;
     }
-    .scientist{
-      background-image: url('/scientist.png');
-      background-repeat: no-repeat;
-    }
     .military{
       background-image: url('/military.png');
       background-repeat: no-repeat;
@@ -74,6 +75,30 @@ $scientist-color: #18466b;
       background-image: url('/attack.png');
       background-repeat: no-repeat;
     }
+    .scientist{
+      background-image: url('/scientist.png');
+      background-repeat: no-repeat;
+    }
+    .pioneer{
+      background-image: url('/pioneer.png');
+      background-repeat: no-repeat;
+    }
+    .scavenger{
+      background-image: url('/scavenger.png');
+      background-repeat: no-repeat;
+    }
+    .imperialist{
+      background-image: url('/imperialist.png');
+      background-repeat: no-repeat;
+    }
+    .warlord{
+      background-image: url('/warlord.png');
+      background-repeat: no-repeat;
+    }
+    .generalist{
+      background-image: url('/generalist.png');
+      background-repeat: no-repeat;
+    }
     .description{
       width: 0.57 * $width;
       height: 0.38 * $height;
@@ -82,15 +107,32 @@ $scientist-color: #18466b;
       font-size: 2em;
       line-height: 1.3;
     }
-    .flavor-text{
+    .flavor-text {
       width: 0.73 * $width;
       height: 0.16 * $height;
       margin: auto;
-      color: $scientist-color;
       font-style: italic;
       text-align: center;
       font-size: 1.5em;
       line-height: 1.3;
+    }
+    .flavor-scientist {
+      color: $scientist-color;
+    }
+    .flavor-pioneer {
+      color: $pioneer-color;
+    }
+    .flavor-scavenger {
+      color: $scavenger-color;
+    }
+    .flavor-imperialist {
+      color: $imperialist-color;
+    }
+    .flavor-warlord {
+      color: $warlord-color;
+    }
+    .flavor-generalist {
+      color: $generalist-color;
     }
     .tech-action{
       margin: auto;
@@ -120,7 +162,78 @@ $scientist-color: #18466b;
       margin: auto;
       display: block;
       height: 15px;
+    }
+    .separator-scientist{
       border-top: 1px solid $scientist-color;
+    }
+    .separator-pioneer{
+      border-top: 1px solid $pioneer-color;
+    }
+    .separator-scavenger{
+      border-top: 1px solid $scavenger-color;
+    }
+    .separator-imperialist{
+      border-top: 1px solid $imperialist-color;
+    }
+    .separator-warlord{
+      border-top: 1px solid $warlord-color;
+    }
+    .separator-generalist{
+      border-top: 1px solid $generalist-color;
+    }
+  }
+  .prerequisite-container-scientist{
+    border-top: 2px solid $scientist-color;
+    &:before{
+      border-top: 2px solid $scientist-color;
+    }
+    &:after{
+      border-top: 2px solid $scientist-color;
+    }
+  }
+  .prerequisite-container-pioneer{
+    border-top: 2px solid $pioneer-color;
+    &:before{
+      border-top: 2px solid $pioneer-color;
+    }
+    &:after{
+      border-top: 2px solid $pioneer-color;
+    }
+  }
+  .prerequisite-container-scavenger{
+    border-top: 2px solid $scavenger-color;
+    &:before{
+      border-top: 2px solid $scavenger-color;
+    }
+    &:after{
+      border-top: 2px solid $scavenger-color;
+    }
+  }
+  .prerequisite-container-imperialist{
+    border-top: 2px solid $imperialist-color;
+    &:before{
+      border-top: 2px solid $imperialist-color;
+    }
+    &:after{
+      border-top: 2px solid $imperialist-color;
+    }
+  }
+  .prerequisite-container-warlord{
+    border-top: 2px solid $warlord-color;
+    &:before{
+      border-top: 2px solid $warlord-color;
+    }
+    &:after{
+      border-top: 2px solid $warlord-color;
+    }
+  }
+  .prerequisite-container-generalist{
+    border-top: 2px solid $generalist-color;
+    &:before{
+      border-top: 2px solid $generalist-color;
+    }
+    &:after{
+      border-top: 2px solid $generalist-color;
     }
   }
   .prerequisite-container{
@@ -128,7 +241,6 @@ $scientist-color: #18466b;
     width: 0.3 * $width;
     font-size: 1.5em;
     font-weight: bolder;
-    border-top: 2px solid $scientist-color;
     text-align: center;
     line-height: 1.2em;
     margin-left: -0.1 * $width;
@@ -139,7 +251,6 @@ $scientist-color: #18466b;
       content: '';
       display: block;
       position: absolute;
-      border-top: 2px solid $scientist-color;
       width: 0.11 * $width;
       transform: rotate(120deg);
       transform-origin: 3px -4px;
@@ -148,7 +259,6 @@ $scientist-color: #18466b;
       content: '';
       display: block;
       position: absolute;
-      border-top: 2px solid $scientist-color;
       width: 0.11 * $width;
       transform: rotate(-120deg);
       transform-origin: 135px -73px;
@@ -179,6 +289,57 @@ $scientist-color: #18466b;
     .scientist{
       color: #2971ab;
     }
+    .pioneer{
+      color: #a66828;
+    }
+    .scavenger{
+      color: #4aa871;
+    }
+    .imperialist{
+      color: #a582c7;
+    }
+    .warlord{
+      color: #d34d50;
+    }
+    .generalist{
+      color: #d8ab0c;
+    }
+  }
+  .cost-container-scientist{
+    border-top: 2px solid $scientist-color;
+    &:after{
+      border-top: 2px solid $scientist-color;
+    }
+  }
+  .cost-container-pioneer{
+    border-top: 2px solid $pioneer-color;
+    &:after{
+      border-top: 2px solid $pioneer-color;
+    }
+  }
+  .cost-container-scavenger{
+    border-top: 2px solid $scavenger-color;
+    &:after{
+      border-top: 2px solid $scavenger-color;
+    }
+  }
+  .cost-container-imperialist{
+    border-top: 2px solid $imperialist-color;
+    &:after{
+      border-top: 2px solid $imperialist-color;
+    }
+  }
+  .cost-container-warlord{
+    border-top: 2px solid $warlord-color;
+    &:after{
+      border-top: 2px solid $warlord-color;
+    }
+  }
+  .cost-container-generalist{
+    border-top: 2px solid $generalist-color;
+    &:after{
+      border-top: 2px solid $generalist-color;
+    }
   }
   .cost-container{
     display: flex;
@@ -186,13 +347,11 @@ $scientist-color: #18466b;
     float: right;
     height: 0.11 * $height;
     max-width: 0.62 * $width;
-    border-top: 2px solid $scientist-color;
     padding-right: 15px;
     &:after{
       content: '';
       display: block;
       position: absolute;
-      border-top: 2px solid $scientist-color;
       width: 0.1 * $width;
       transform: rotate(130deg);
       transform-origin: 1px 0px;
@@ -257,5 +416,20 @@ $scientist-color: #18466b;
   }
   .header.scientist{
     background-color: $scientist-color;
+  }
+  .header.pioneer{
+    background-color: $pioneer-color;
+  }
+  .header.scavenger{
+    background-color: $scavenger-color;
+  }
+  .header.imperialist{
+   background-color: $imperialist-color;
+  }
+  .header.warlord{
+    background-color: $warlord-color;
+  }
+  .header.generalist{
+    background-color: $generalist-color;
   }
 }
