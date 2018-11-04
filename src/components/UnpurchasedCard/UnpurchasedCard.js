@@ -1,22 +1,23 @@
 import React, {Component} from 'react';
+import TechContainer from './TechContainer';
 
 class UnpurchasedCard extends Component {
     render() {
-        const prerequisites = this.props.prerequisites.length > 0 ? <TechContainer tech={this.props.prerequisites} type="prereq" /> : null;
-        const negates = this.props.negation.length > 0 ? <TechContainer tech={this.props.negation} type="negate" /> : null;
+        const prerequisites = this.props.requires.length > 0 ? <TechContainer tech={this.props.requires} type="prereq" /> : null;
+        const negates = this.props.excludes.length > 0 ? <TechContainer tech={this.props.excludes} type="negate" /> : null;
         const techContainers = prerequisites !== null || negates !== null ? <div className="tech-containers">{prerequisites}{negates}</div> : null;
         return (
             <div className="card unpurchased" id={this.props.id}>
                 <div className="title">
-                    {this.props.level} - {this.props.title}
+                    {this.props.level} - {this.props.name}
                 </div>
                 <div className="description">
-                    {this.props.description}
+                    {this.props.unpurchased_desc}
                 </div>
                 {techContainers}
                 <div className="costs">
-                    {this.props.costs.map((c) => (
-                        <i className={c.name} />
+                    {this.props.cost.map((c) => (
+                        <i className={c} />
                     ))}
                 </div>
             </div>

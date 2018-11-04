@@ -1,0 +1,2528 @@
+[
+  {
+    "role": "Explorer",
+    "name": "Encryption",
+    "unpurchased_desc": "Discount on support",
+    "purchased_desc": "One of your fleets may support for free",
+    "flavor_text": "Your captains can communicate with ease and secrecy, and are able to come to the aid of any citizen in need.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "/",
+      "F",
+      "F",
+      "/",
+      "E",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Fuel Efficiency",
+    "unpurchased_desc": "Discount on fleet movement",
+    "purchased_desc": "Spend one less ENERGY on total move cost",
+    "flavor_text": "You have developed engines with a clean burn, capable of consuming less fuel than before",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Boosters",
+    "unpurchased_desc": "Increase fleet movement",
+    "purchased_desc": "Fleets move twice as far",
+    "flavor_text": "Your shipbuilders have developed a technology capable of producing extreme speed",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Fuel Efficiency"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Asteroid Mining",
+    "unpurchased_desc": "Harvest resources via fleets on uncolonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on an uncolonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Harvest Rover"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Harvest Rover",
+    "unpurchased_desc": "Harvest resources via fleets on colonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on a colonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Asteroid Mining"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Expanded Cargohold",
+    "unpurchased_desc": "Increase resources harvested via fleets",
+    "purchased_desc": "Harvesting using your fleets now gives you resources equal to fleet level",
+    "flavor_text": "Fleets are now equipped with extra storage space due to continued reduction of technology size requirements",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Asteroid Mining",
+      "Harvest Rover"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Proximity Fuse",
+    "unpurchased_desc": "Gain resource when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, they give you a resource",
+    "flavor_text": "You've prepared a nasty surprise for anyone who dares attack you",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Salvage Drone"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Salvage Drone",
+    "unpurchased_desc": "Gain resource on failed attack",
+    "purchased_desc": "If you fail an attack, the enemy gives you three resources",
+    "flavor_text": "You have developed a drone capable of extracting resources from your target",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Proximity Fuse"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Blockade",
+    "unpurchased_desc": "Block opponents from harvesting",
+    "purchased_desc": "All production in enemy colonies adjacent to your fleets is halted",
+    "flavor_text": "Any foe within your range must abandon their posts and focus on the defense, for fear of total destruction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Salvage Drone"
+    ],
+    "excludes": [
+      "Defensive Turrets"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Defensive Turrets",
+    "unpurchased_desc": "Downgrade enemy fleet when you defend",
+    "purchased_desc": "If an enemy fails an attack against you, their fleet is downgraded by a level",
+    "flavor_text": "You've developed planet-to-space weapons capable of targeting an fleet that tries to attack your colony",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Salvage Drone"
+    ],
+    "excludes": [
+      "Blockade"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Disrupter Drone",
+    "unpurchased_desc": "Downgrade enemy colony on failed attack",
+    "purchased_desc": "If you fail an attack, your enemy downgrades their colony one level",
+    "flavor_text": "Your military team has developed a weapon that leaves great destruction in your wake",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "M",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Defensive Turrets"
+    ],
+    "excludes": [
+      "Timeshares"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Timeshares",
+    "unpurchased_desc": "Harvest using opponents' colonies",
+    "purchased_desc": "Harvest from one adjacent enemy colony per fleet",
+    "flavor_text": "Your military is so strong, your enemies will gladly work for you in exchange for a fleeting promise of safety",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Defensive Turrets"
+    ],
+    "excludes": [
+      "Disrupter Drone"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Terraform",
+    "unpurchased_desc": "Add resources or military abilities to planets",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to your colonized tile",
+    "flavor_text": "You can modify the atmosphere and surface of your planets to make them more habitable",
+    "level": 2,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Accretion Device",
+    "unpurchased_desc": "Undestroy a planet",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to a destroyed tile adjacent to your colony",
+    "flavor_text": "Your scientists have developed a device capable of creating an entire habitable planet in the dead of space",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Antimatter"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Antimatter",
+    "unpurchased_desc": "Destroy an explored planet",
+    "purchased_desc": "Destroy an uncolonized tile adjacent to your colony. Collect all matching resources",
+    "flavor_text": "You have developed a weapon strong enough to obliterate any planet within range",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Accretion Device"
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Explorer1",
+    "unpurchased_desc": "Turn manipulation",
+    "purchased_desc": "You may save or borrow actions from your next turn.",
+    "flavor_text": "",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Explorer2",
+    "unpurchased_desc": "Bid after others have revealed",
+    "purchased_desc": "You may choose how much to bid during the Exploration phase, after all other players have revealed their bids.",
+    "flavor_text": "",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Explorer1"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Explorer",
+    "name": "Spacetime Manipulator",
+    "unpurchased_desc": "Swap explored tiles",
+    "purchased_desc": "You may swap any explored tile with another explored tile, as long as any existing fleets or colonies remain in legal placement.",
+    "flavor_text": "",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "M",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Explorer2"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Encryption",
+    "unpurchased_desc": "Discount on support",
+    "purchased_desc": "One of your fleets may support for free",
+    "flavor_text": "Your captains can communicate with ease and secrecy, and are able to come to the aid of any citizen in need.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "/",
+      "F",
+      "F",
+      "/",
+      "E",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Fuel Efficiency",
+    "unpurchased_desc": "Discount on fleet movement",
+    "purchased_desc": "Spend one less ENERGY on total move cost",
+    "flavor_text": "You have developed engines with a clean burn, capable of consuming less fuel than before",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Boosters",
+    "unpurchased_desc": "Increase fleet movement",
+    "purchased_desc": "Fleets move twice as far",
+    "flavor_text": "Your shipbuilders have developed a technology capable of producing extreme speed",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Fuel Efficiency"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Asteroid Mining",
+    "unpurchased_desc": "Harvest resources via fleets on uncolonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on an uncolonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Harvest Rover"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Harvest Rover",
+    "unpurchased_desc": "Harvest resources via fleets on colonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on a colonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Asteroid Mining"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Expanded Cargohold",
+    "unpurchased_desc": "Increase resources harvested via fleets",
+    "purchased_desc": "Harvesting using your fleets now gives you resources equal to fleet level",
+    "flavor_text": "Fleets are now equipped with extra storage space due to continued reduction of technology size requirements",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Asteroid Mining",
+      "Harvest Rover"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Salvage Drone",
+    "unpurchased_desc": "Gain resource on failed attack",
+    "purchased_desc": "If you fail an attack, the enemy gives you three resources",
+    "flavor_text": "You have developed a drone capable of extracting resources from your target",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Taxation"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Taxation",
+    "unpurchased_desc": "Use opponents' colonies while harvesting",
+    "purchased_desc": "When an opponent harvests, gain a matching resource per colony adjacent to each of your fleets",
+    "flavor_text": "Your captains have discovered the efficiency of threatening your enemies, causing them to produce additional resources for your benefit.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Salvage Drone"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Blockade",
+    "unpurchased_desc": "Block opponents from harvesting",
+    "purchased_desc": "All production in enemy colonies adjacent to your fleets is halted",
+    "flavor_text": "Any foe within your range must abandon their posts and focus on the defense, for fear of total destruction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Salvage Drone",
+      "Taxation"
+    ],
+    "excludes": [
+      "Defensive Turrets"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Defensive Turrets",
+    "unpurchased_desc": "Downgrade enemy fleet when you defend",
+    "purchased_desc": "If an enemy fails an attack against you, their fleet is downgraded by a level",
+    "flavor_text": "You've developed planet-to-space weapons capable of targeting an fleet that tries to attack your colony",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Salvage Drone",
+      "Taxation"
+    ],
+    "excludes": [
+      "Blockade"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Disrupter Drone",
+    "unpurchased_desc": "Downgrade enemy colony on failed attack",
+    "purchased_desc": "If you fail an attack, your enemy downgrades their colony one level",
+    "flavor_text": "Your military team has developed a weapon that leaves great destruction in your wake",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "M",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Defensive Turrets"
+    ],
+    "excludes": [
+      "Orbital Defense Array"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Orbital Defense Array",
+    "unpurchased_desc": "Downgrade enemy fleet when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, their fleet is downgraded by a level",
+    "flavor_text": "You have built self-destruct weaponry, capable of decimating everyone as a last resort",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "M",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Defensive Turrets"
+    ],
+    "excludes": [
+      "Disrupter Drone"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Terraform",
+    "unpurchased_desc": "Add resources or military abilities to planets",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to your colonized tile",
+    "flavor_text": "You can modify the atmosphere and surface of your planets to make them more habitable",
+    "level": 2,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Accretion Device",
+    "unpurchased_desc": "Undestroy a planet",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to a destroyed tile adjacent to your colony",
+    "flavor_text": "Your scientists have developed a device capable of creating an entire habitable planet in the dead of space",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Antimatter"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Antimatter",
+    "unpurchased_desc": "Destroy an explored planet",
+    "purchased_desc": "Destroy an uncolonized tile adjacent to your colony. Collect all matching resources",
+    "flavor_text": "You have developed a weapon strong enough to obliterate any planet within range",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Accretion Device"
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Fabricators",
+    "unpurchased_desc": "Build/Upgrade fleet as a research action",
+    "purchased_desc": "Build/Upgrade a fleet",
+    "flavor_text": "",
+    "level": 1,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Militarization",
+    "unpurchased_desc": "Build/upgrade fleets on any colony",
+    "purchased_desc": "Build/Upgrade a fleet on any of your colonies",
+    "flavor_text": "",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Fabricators"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Imperialist",
+    "name": "Autonomous Construction",
+    "unpurchased_desc": "Adjust fleet levels during movement",
+    "purchased_desc": "Pick up or drop off fleets along your move path",
+    "flavor_text": "",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "M",
+      "M",
+      "M",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Militarization"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Encryption",
+    "unpurchased_desc": "Discount on support",
+    "purchased_desc": "One of your fleets may support for free",
+    "flavor_text": "Your captains can communicate with ease and secrecy, and are able to come to the aid of any citizen in need.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "/",
+      "F",
+      "F",
+      "/",
+      "E",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Fuel Efficiency",
+    "unpurchased_desc": "Discount on fleet movement",
+    "purchased_desc": "Spend one less ENERGY on total move cost",
+    "flavor_text": "You have developed engines with a clean burn, capable of consuming less fuel than before",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Boosters",
+    "unpurchased_desc": "Increase fleet movement",
+    "purchased_desc": "Fleets move twice as far",
+    "flavor_text": "Your shipbuilders have developed a technology capable of producing extreme speed",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Fuel Efficiency"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Asteroid Mining",
+    "unpurchased_desc": "Harvest resources via fleets on uncolonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on an uncolonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Harvest Rover"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Harvest Rover",
+    "unpurchased_desc": "Harvest resources via fleets on colonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on a colonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Asteroid Mining"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Expanded Cargohold",
+    "unpurchased_desc": "Increase resources harvested via fleets",
+    "purchased_desc": "Harvesting using your fleets now gives you resources equal to fleet level",
+    "flavor_text": "Fleets are now equipped with extra storage space due to continued reduction of technology size requirements",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Asteroid Mining",
+      "Harvest Rover"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Proximity Fuse",
+    "unpurchased_desc": "Gain resource when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, they give you a resource",
+    "flavor_text": "You've prepared a nasty surprise for anyone who dares attack you",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Taxation"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Taxation",
+    "unpurchased_desc": "Use opponents' colonies while harvesting",
+    "purchased_desc": "When an opponent harvests, gain a matching resource per colony adjacent to each of your fleets",
+    "flavor_text": "Your captains have discovered the efficiency of threatening your enemies, causing them to produce additional resources for your benefit.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Proximity Fuse"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Blockade",
+    "unpurchased_desc": "Block opponents from harvesting",
+    "purchased_desc": "All production in enemy colonies adjacent to your fleets is halted",
+    "flavor_text": "Any foe within your range must abandon their posts and focus on the defense, for fear of total destruction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Taxation"
+    ],
+    "excludes": [
+      "Raider Drone"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Raider Drone",
+    "unpurchased_desc": "Gain resources on failed attack",
+    "purchased_desc": "If you fail an attack, take all of one resource type from your enemy",
+    "flavor_text": "You have developed advanced drones capable of precise, targeted extraction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Taxation"
+    ],
+    "excludes": [
+      "Blockade"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Disrupter Drone",
+    "unpurchased_desc": "Downgrade enemy colony on failed attack",
+    "purchased_desc": "If you fail an attack, your enemy downgrades their colony one level",
+    "flavor_text": "Your military team has developed a weapon that leaves great destruction in your wake",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "M",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Orbital Defense Array"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Orbital Defense Array",
+    "unpurchased_desc": "Downgrade enemy fleet when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, their fleet is downgraded by a level",
+    "flavor_text": "You have built self-destruct weaponry, capable of decimating everyone as a last resort",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "M",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Disrupter Drone"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Terraform",
+    "unpurchased_desc": "Add resources or military abilities to planets",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to your colonized tile",
+    "flavor_text": "You can modify the atmosphere and surface of your planets to make them more habitable",
+    "level": 2,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Accretion Device",
+    "unpurchased_desc": "Undestroy a planet",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to a destroyed tile adjacent to your colony",
+    "flavor_text": "Your scientists have developed a device capable of creating an entire habitable planet in the dead of space",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Antimatter"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Antimatter",
+    "unpurchased_desc": "Destroy an explored planet",
+    "purchased_desc": "Destroy an uncolonized tile adjacent to your colony. Collect all matching resources",
+    "flavor_text": "You have developed a weapon strong enough to obliterate any planet within range",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Accretion Device"
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Interstellar Ark",
+    "unpurchased_desc": "Build/Upgrade colony as a research action",
+    "purchased_desc": "Build/upgrade colony",
+    "flavor_text": "Your researchers have developed robots cabale of building your bases for you",
+    "level": 1,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "Nanotube Polymers",
+    "unpurchased_desc": "Discount on building colonies",
+    "purchased_desc": "Spend one less resource on building a colony",
+    "flavor_text": "Your architects have developed building materials strong and efficient enough, that you can build your colonies with fewer materials.",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Interstellar Ark"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Pioneer",
+    "name": "TempCol",
+    "unpurchased_desc": "Move or place a temporary colony",
+    "purchased_desc": "Move the temporary colony cube to any planet tile unoccupied by another player.",
+    "flavor_text": "",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "M",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Nanotube Polymers"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Encryption",
+    "unpurchased_desc": "Discount on support",
+    "purchased_desc": "One of your fleets may support for free",
+    "flavor_text": "Your captains can communicate with ease and secrecy, and are able to come to the aid of any citizen in need.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "/",
+      "F",
+      "F",
+      "/",
+      "E",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Fuel Efficiency",
+    "unpurchased_desc": "Discount on fleet movement",
+    "purchased_desc": "Spend one less ENERGY on total move cost",
+    "flavor_text": "You have developed engines with a clean burn, capable of consuming less fuel than before",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Boosters",
+    "unpurchased_desc": "Increase fleet movement",
+    "purchased_desc": "Fleets move twice as far",
+    "flavor_text": "Your shipbuilders have developed a technology capable of producing extreme speed",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Fuel Efficiency"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Asteroid Mining",
+    "unpurchased_desc": "Harvest resources via fleets on uncolonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on an uncolonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Harvest Rover"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Harvest Rover",
+    "unpurchased_desc": "Harvest resources via fleets on colonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on a colonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Asteroid Mining"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Expanded Cargohold",
+    "unpurchased_desc": "Increase resources harvested via fleets",
+    "purchased_desc": "Harvesting using your fleets now gives you resources equal to fleet level",
+    "flavor_text": "Fleets are now equipped with extra storage space due to continued reduction of technology size requirements",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Asteroid Mining",
+      "Harvest Rover"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Salvage Drone",
+    "unpurchased_desc": "Gain resource on failed attack",
+    "purchased_desc": "If you fail an attack, the enemy gives you three resources",
+    "flavor_text": "You have developed a drone capable of extracting resources from your target",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Taxation"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Taxation",
+    "unpurchased_desc": "Use opponents' colonies while harvesting",
+    "purchased_desc": "When an opponent harvests, gain a matching resource per colony adjacent to each of your fleets",
+    "flavor_text": "Your captains have discovered the efficiency of threatening your enemies, causing them to produce additional resources for your benefit.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Salvage Drone"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Defensive Turrets",
+    "unpurchased_desc": "Downgrade enemy fleet when you defend",
+    "purchased_desc": "If an enemy fails an attack against you, their fleet is downgraded by a level",
+    "flavor_text": "You've developed planet-to-space weapons capable of targeting an fleet that tries to attack your colony",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Salvage Drone",
+      "Taxation"
+    ],
+    "excludes": [
+      "Raider Drone"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Raider Drone",
+    "unpurchased_desc": "Gain resources on failed attack",
+    "purchased_desc": "If you fail an attack, take all of one resource type from your enemy",
+    "flavor_text": "You have developed advanced drones capable of precise, targeted extraction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Salvage Drone",
+      "Taxation"
+    ],
+    "excludes": [
+      "Defensive Turrets"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Orbital Defense Array",
+    "unpurchased_desc": "Downgrade enemy fleet when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, their fleet is downgraded by a level",
+    "flavor_text": "You have built self-destruct weaponry, capable of decimating everyone as a last resort",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "M",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Defensive Turrets",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Timeshares"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Timeshares",
+    "unpurchased_desc": "Harvest using opponents' colonies",
+    "purchased_desc": "Harvest from one adjacent enemy colony per fleet",
+    "flavor_text": "Your military is so strong, your enemies will gladly work for you in exchange for a fleeting promise of safety",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Defensive Turrets",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Orbital Defense Array"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Terraform",
+    "unpurchased_desc": "Add resources or military abilities to planets",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to your colonized tile",
+    "flavor_text": "You can modify the atmosphere and surface of your planets to make them more habitable",
+    "level": 2,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Accretion Device",
+    "unpurchased_desc": "Undestroy a planet",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to a destroyed tile adjacent to your colony",
+    "flavor_text": "Your scientists have developed a device capable of creating an entire habitable planet in the dead of space",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Antimatter"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Antimatter",
+    "unpurchased_desc": "Destroy an explored planet",
+    "purchased_desc": "Destroy an uncolonized tile adjacent to your colony. Collect all matching resources",
+    "flavor_text": "You have developed a weapon strong enough to obliterate any planet within range",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Accretion Device"
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Magnetic Rake",
+    "unpurchased_desc": "Harvest as a research action",
+    "purchased_desc": "Harvest",
+    "flavor_text": "Your research team has developed means to collect resources that were previously unreachable",
+    "level": 1,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "F",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "NotTaxation",
+    "unpurchased_desc": "Take resources from other players",
+    "purchased_desc": "Take 1 harvested resource from another player when they harvest",
+    "flavor_text": "You will gladly share your secrets to those unfortunate, less adept at harvesting…for a price",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Magnetic Rake"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scavenger",
+    "name": "Arcology",
+    "unpurchased_desc": "Hybrids produce extra resources",
+    "purchased_desc": "Your colonized hybrid planets now produce all matching types equal to colony level",
+    "flavor_text": "",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "NotTaxation"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Encryption",
+    "unpurchased_desc": "Discount on support",
+    "purchased_desc": "One of your fleets may support for free",
+    "flavor_text": "Your captains can communicate with ease and secrecy, and are able to come to the aid of any citizen in need.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "/",
+      "F",
+      "F",
+      "/",
+      "E",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Fuel Efficiency",
+    "unpurchased_desc": "Discount on fleet movement",
+    "purchased_desc": "Spend one less ENERGY on total move cost",
+    "flavor_text": "You have developed engines with a clean burn, capable of consuming less fuel than before",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Boosters",
+    "unpurchased_desc": "Increase fleet movement",
+    "purchased_desc": "Fleets move twice as far",
+    "flavor_text": "Your shipbuilders have developed a technology capable of producing extreme speed",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Fuel Efficiency"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Asteroid Mining",
+    "unpurchased_desc": "Harvest resources via fleets on uncolonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on an uncolonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Harvest Rover"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Harvest Rover",
+    "unpurchased_desc": "Harvest resources via fleets on colonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on a colonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Asteroid Mining"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Expanded Cargohold",
+    "unpurchased_desc": "Increase resources harvested via fleets",
+    "purchased_desc": "Harvesting using your fleets now gives you resources equal to fleet level",
+    "flavor_text": "Fleets are now equipped with extra storage space due to continued reduction of technology size requirements",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Asteroid Mining",
+      "Harvest Rover"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Proximity Fuse",
+    "unpurchased_desc": "Gain resource when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, they give you a resource",
+    "flavor_text": "You've prepared a nasty surprise for anyone who dares attack you",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Taxation"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Taxation",
+    "unpurchased_desc": "Use opponents' colonies while harvesting",
+    "purchased_desc": "When an opponent harvests, gain a matching resource per colony adjacent to each of your fleets",
+    "flavor_text": "Your captains have discovered the efficiency of threatening your enemies, causing them to produce additional resources for your benefit.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Proximity Fuse"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Defensive Turrets",
+    "unpurchased_desc": "Downgrade enemy fleet when you defend",
+    "purchased_desc": "If an enemy fails an attack against you, their fleet is downgraded by a level",
+    "flavor_text": "You've developed planet-to-space weapons capable of targeting an fleet that tries to attack your colony",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Taxation"
+    ],
+    "excludes": [
+      "Raider Drone"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Raider Drone",
+    "unpurchased_desc": "Gain resources on failed attack",
+    "purchased_desc": "If you fail an attack, take all of one resource type from your enemy",
+    "flavor_text": "You have developed advanced drones capable of precise, targeted extraction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Taxation"
+    ],
+    "excludes": [
+      "Defensive Turrets"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Disrupter Drone",
+    "unpurchased_desc": "Downgrade enemy colony on failed attack",
+    "purchased_desc": "If you fail an attack, your enemy downgrades their colony one level",
+    "flavor_text": "Your military team has developed a weapon that leaves great destruction in your wake",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "M",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Defensive Turrets",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Timeshares"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Timeshares",
+    "unpurchased_desc": "Harvest using opponents' colonies",
+    "purchased_desc": "Harvest from one adjacent enemy colony per fleet",
+    "flavor_text": "Your military is so strong, your enemies will gladly work for you in exchange for a fleeting promise of safety",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Defensive Turrets",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Disrupter Drone"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Terraform",
+    "unpurchased_desc": "Add resources or military abilities to planets",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to your colonized tile",
+    "flavor_text": "You can modify the atmosphere and surface of your planets to make them more habitable",
+    "level": 2,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Accretion Device",
+    "unpurchased_desc": "Undestroy a planet",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to a destroyed tile adjacent to your colony",
+    "flavor_text": "Your scientists have developed a device capable of creating an entire habitable planet in the dead of space",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Antimatter"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Antimatter",
+    "unpurchased_desc": "Destroy an explored planet",
+    "purchased_desc": "Destroy an uncolonized tile adjacent to your colony. Collect all matching resources",
+    "flavor_text": "You have developed a weapon strong enough to obliterate any planet within range",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Accretion Device"
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Botsourcing",
+    "unpurchased_desc": "Any/all actions may be research actions",
+    "purchased_desc": "Complete a research action in place of a base action",
+    "flavor_text": "",
+    "level": 1,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Memory Eraser",
+    "unpurchased_desc": "Cause all players to lose a technology",
+    "purchased_desc": "Name a technology. All players who have researched it take resources equal to its cost and lose the technology",
+    "flavor_text": "",
+    "level": 2,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Botsourcing"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Scientist",
+    "name": "Cloning",
+    "unpurchased_desc": "Mirrors another technology",
+    "purchased_desc": "Move your cloning cube to any of your technology cards. This technology provides that card's effect",
+    "flavor_text": "",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "M",
+      "M",
+      "M",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Memory Eraser"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Encryption",
+    "unpurchased_desc": "Discount on support",
+    "purchased_desc": "One of your fleets may support for free",
+    "flavor_text": "Your captains can communicate with ease and secrecy, and are able to come to the aid of any citizen in need.",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "/",
+      "F",
+      "F",
+      "/",
+      "E",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Fuel Efficiency",
+    "unpurchased_desc": "Discount on fleet movement",
+    "purchased_desc": "Spend one less ENERGY on total move cost",
+    "flavor_text": "You have developed engines with a clean burn, capable of consuming less fuel than before",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Boosters",
+    "unpurchased_desc": "Increase fleet movement",
+    "purchased_desc": "Fleets move twice as far",
+    "flavor_text": "Your shipbuilders have developed a technology capable of producing extreme speed",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Fleet",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Fuel Efficiency"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Asteroid Mining",
+    "unpurchased_desc": "Harvest resources via fleets on uncolonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on an uncolonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Harvest Rover"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Harvest Rover",
+    "unpurchased_desc": "Harvest resources via fleets on colonized tiles",
+    "purchased_desc": "Gain matching resource per fleet on a colonized tile during harvest",
+    "flavor_text": "You have created machines capable of harvesting additional resources",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Asteroid Mining"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Expanded Cargohold",
+    "unpurchased_desc": "Increase resources harvested via fleets",
+    "purchased_desc": "Harvesting using your fleets now gives you resources equal to fleet level",
+    "flavor_text": "Fleets are now equipped with extra storage space due to continued reduction of technology size requirements",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Harvest",
+    "cost": [
+      "F",
+      "F",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Asteroid Mining",
+      "Harvest Rover"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Proximity Fuse",
+    "unpurchased_desc": "Gain resource when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, they give you a resource",
+    "flavor_text": "You've prepared a nasty surprise for anyone who dares attack you",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Salvage Drone"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Salvage Drone",
+    "unpurchased_desc": "Gain resource on failed attack",
+    "purchased_desc": "If you fail an attack, the enemy gives you three resources",
+    "flavor_text": "You have developed a drone capable of extracting resources from your target",
+    "level": 1,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+
+    ],
+    "excludes": [
+      "Proximity Fuse"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Blockade",
+    "unpurchased_desc": "Block opponents from harvesting",
+    "purchased_desc": "All production in enemy colonies adjacent to your fleets is halted",
+    "flavor_text": "Any foe within your range must abandon their posts and focus on the defense, for fear of total destruction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Salvage Drone"
+    ],
+    "excludes": [
+      "Raider Drone"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Raider Drone",
+    "unpurchased_desc": "Gain resources on failed attack",
+    "purchased_desc": "If you fail an attack, take all of one resource type from your enemy",
+    "flavor_text": "You have developed advanced drones capable of precise, targeted extraction",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "M",
+      "M",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Proximity Fuse",
+      "Salvage Drone"
+    ],
+    "excludes": [
+      "Blockade"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Orbital Defense Array",
+    "unpurchased_desc": "Downgrade enemy fleet when you lose a colony",
+    "purchased_desc": "If an enemy takes over your colony, their fleet is downgraded by a level",
+    "flavor_text": "You have built self-destruct weaponry, capable of decimating everyone as a last resort",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "M",
+      "M",
+      "M"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Timeshares"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Timeshares",
+    "unpurchased_desc": "Harvest using opponents' colonies",
+    "purchased_desc": "Harvest from one adjacent enemy colony per fleet",
+    "flavor_text": "Your military is so strong, your enemies will gladly work for you in exchange for a fleeting promise of safety",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Interaction",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Blockade",
+      "Raider Drone"
+    ],
+    "excludes": [
+      "Orbital Defense Array"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Terraform",
+    "unpurchased_desc": "Add resources or military abilities to planets",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to your colonized tile",
+    "flavor_text": "You can modify the atmosphere and surface of your planets to make them more habitable",
+    "level": 2,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Accretion Device",
+    "unpurchased_desc": "Undestroy a planet",
+    "purchased_desc": "Spend a resource to add a matching or military symbol to a destroyed tile adjacent to your colony",
+    "flavor_text": "Your scientists have developed a device capable of creating an entire habitable planet in the dead of space",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Antimatter"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Antimatter",
+    "unpurchased_desc": "Destroy an explored planet",
+    "purchased_desc": "Destroy an uncolonized tile adjacent to your colony. Collect all matching resources",
+    "flavor_text": "You have developed a weapon strong enough to obliterate any planet within range",
+    "level": 3,
+    "action_effect": "A",
+    "category": "Planet",
+    "cost": [
+      "F",
+      "M",
+      "E",
+      "*",
+      "*",
+      "*"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Terraform"
+    ],
+    "excludes": [
+      "Accretion Device"
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Propellant Depot",
+    "unpurchased_desc": "Move fleet as a research action",
+    "purchased_desc": "Move a fleet as a research action",
+    "flavor_text": "Your ancestors had the forethought to place storages of fuel along the paths needed to reach other worlds",
+    "level": 1,
+    "action_effect": "A",
+    "category": "Role",
+    "cost": [
+      "F",
+      "E"
+    ],
+    "usage_cost": null,
+    "requires": [
+
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Wormhole",
+    "unpurchased_desc": "Fleets can jump over tiles",
+    "purchased_desc": "Fleets can jump over one tile during move",
+    "flavor_text": "No longer do asteroid belts or unknown space block your path; you have the means to jump through space to easily reach your destination",
+    "level": 2,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Propellant Depot"
+    ],
+    "excludes": [
+
+    ]
+  },
+  {
+    "role": "Warlord",
+    "name": "Dyson Sphere",
+    "unpurchased_desc": "Fleets move for free",
+    "purchased_desc": "Move all fleets for free",
+    "flavor_text": "You no longer have to worry about conserving fuel; the very stars have lended their aid to your paths of destruction",
+    "level": 3,
+    "action_effect": "E",
+    "category": "Role",
+    "cost": [
+      "F",
+      "F",
+      "F",
+      "E",
+      "E",
+      "E"
+    ],
+    "usage_cost": "",
+    "requires": [
+      "Wormhole"
+    ],
+    "excludes": [
+
+    ]
+  }
+]
