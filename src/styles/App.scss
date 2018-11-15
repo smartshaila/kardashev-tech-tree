@@ -1,5 +1,13 @@
-$width: 750px;
+$border-width: 10px;
+$width: 750px - $border-width;
 $height: 0.7 * $width;
+
+$base-font-size: 22pt;
+
+$unpurchased-dark: #484848;
+$unpurchased-mid: #939393;
+$unpurchased-light: #ededed;
+$unpurchased-background: #fff;
 
 $scientist-color: #18466b;
 $pioneer-color: #603c18;
@@ -7,6 +15,67 @@ $scavenger-color: #0c542a;
 $imperialist-color: #502f70;
 $warlord-color: #6f0d0f;
 $generalist-color: #776115;
+
+.unpurchased {
+  width: $width;
+  height: $height;
+  background-color: $unpurchased-background;
+  color: $unpurchased-dark;
+  border: $unpurchased-mid $border-width solid;
+  font-family: 'Eurostile', sans-serif;
+  font-size: $base-font-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    height: $height * 0.2;
+    width: 100%;
+    order: 1;
+    font-size: larger;
+    font-weight: bolder;
+    vertical-align: center;
+    border: black 1px solid;
+  }
+  .description {
+    width: 100%;
+    flex-grow: 1;
+    order: 2;
+    vertical-align: center;
+    border: black 1px solid;
+  }
+  .tech-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    order: 3;
+    .tech {
+      width: $width * 0.4;
+      height: $height * 0.2;
+      border: black 1px solid;
+    }
+    .prereq {
+      background-color: $unpurchased-light;
+      color: $unpurchased-dark;
+      order: 1;
+    }
+    .negate {
+      background-color: $unpurchased-dark;
+      color: $unpurchased-light;
+      order: 2;
+    }
+  }
+  .costs {
+    height: $height * 0.2;
+    width: 100%;
+    order: 4;
+    border: black 1px solid;
+  }
+}
 
 .card {
   width: $width;

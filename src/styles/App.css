@@ -1,12 +1,64 @@
+.unpurchased {
+  width: 740px;
+  height: 518px;
+  background-color: #fff;
+  color: #484848;
+  border: #939393 10px solid;
+  font-family: 'Eurostile', sans-serif;
+  font-size: 22pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+  .unpurchased .title {
+    height: 103.6px;
+    width: 100%;
+    order: 1;
+    font-size: larger;
+    font-weight: bolder;
+    vertical-align: center;
+    border: black 1px solid; }
+  .unpurchased .description {
+    width: 100%;
+    flex-grow: 1;
+    order: 2;
+    vertical-align: center;
+    border: black 1px solid; }
+  .unpurchased .tech-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    order: 3; }
+    .unpurchased .tech-containers .tech {
+      width: 296px;
+      height: 103.6px;
+      border: black 1px solid; }
+    .unpurchased .tech-containers .prereq {
+      background-color: #ededed;
+      color: #484848;
+      order: 1; }
+    .unpurchased .tech-containers .negate {
+      background-color: #484848;
+      color: #ededed;
+      order: 2; }
+  .unpurchased .costs {
+    height: 103.6px;
+    width: 100%;
+    order: 4;
+    border: black 1px solid; }
+
 .card {
-  width: 750px;
-  height: 525px;
+  width: 740px;
+  height: 518px;
   background-color: white;
   border: black 1px solid;
   font-family: 'Eurostile', sans-serif; }
   .card .header {
     display: flex;
-    height: 89.25px;
+    height: 88.06px;
     color: white; }
     .card .header .title {
       margin: auto;
@@ -15,24 +67,24 @@
     .card .header .level-1 {
       background-image: url("/level-1.png");
       background-repeat: no-repeat;
-      width: 97.5px;
-      margin-left: -97.5px; }
+      width: 96.2px;
+      margin-left: -96.2px; }
     .card .header .level-2 {
       background-image: url("/level-2.png");
       background-repeat: no-repeat;
-      width: 97.5px;
-      margin-left: -97.5px; }
+      width: 96.2px;
+      margin-left: -96.2px; }
     .card .header .level-3 {
       background-image: url("/level-3.png");
       background-repeat: no-repeat;
-      width: 97.5px;
-      margin-left: -97.5px; }
+      width: 96.2px;
+      margin-left: -96.2px; }
   .card .body {
     display: flex;
     flex-direction: column; }
     .card .body .tech-icon {
-      width: 90px;
-      height: 90px;
+      width: 88.8px;
+      height: 88.8px;
       margin-left: 40px;
       margin-top: -50px; }
     .card .body .harvest {
@@ -72,15 +124,15 @@
       background-image: url("/generalist.png");
       background-repeat: no-repeat; }
     .card .body .description {
-      width: 427.5px;
-      height: 199.5px;
+      width: 421.8px;
+      height: 196.84px;
       margin: auto;
       text-align: center;
       font-size: 2em;
       line-height: 1.3; }
     .card .body .flavor-text {
-      width: 547.5px;
-      height: 84px;
+      width: 540.2px;
+      height: 82.88px;
       margin: auto;
       font-style: italic;
       text-align: center;
@@ -100,25 +152,25 @@
       color: #776115; }
     .card .body .tech-action {
       margin: auto;
-      height: 49.875px;
+      height: 49.21px;
       margin-top: -20px;
       margin-bottom: 9px; }
     .card .body .tech-action-icon {
       background-image: url("/tech-action-icon.png");
       background-repeat: no-repeat;
-      width: 49.5px; }
+      width: 48.84px; }
     .card .body .flip-tech {
       margin: auto;
-      height: 54.075px;
+      height: 53.354px;
       margin-top: -10px;
       margin-bottom: -45px;
       margin-left: 20px; }
     .card .body .flip-tech-icon {
       background-image: url("/flip-tech-icon.png");
       background-repeat: no-repeat;
-      width: 54px; }
+      width: 53.28px; }
     .card .body .separator {
-      width: 562.5px;
+      width: 555px;
       margin: auto;
       display: block;
       height: 15px; }
@@ -172,27 +224,27 @@
       border-top: 2px solid #776115; }
   .card .prerequisite-container {
     transform: rotate(90deg);
-    width: 225px;
+    width: 222px;
     font-size: 1.5em;
     font-weight: bolder;
     text-align: center;
     line-height: 1.2em;
-    margin-left: -75px;
-    margin-top: -199.5px;
+    margin-left: -74px;
+    margin-top: -196.84px;
     padding-top: 8px;
     padding-bottom: 8px; }
     .card .prerequisite-container:before {
       content: '';
       display: block;
       position: absolute;
-      width: 82.5px;
+      width: 81.4px;
       transform: rotate(120deg);
       transform-origin: 3px -4px; }
     .card .prerequisite-container:after {
       content: '';
       display: block;
       position: absolute;
-      width: 82.5px;
+      width: 81.4px;
       transform: rotate(-120deg);
       transform-origin: 135px -73px; }
     .card .prerequisite-container .none {
@@ -249,20 +301,20 @@
     display: flex;
     flex-direction: row;
     float: right;
-    height: 57.75px;
-    max-width: 465px;
+    height: 56.98px;
+    max-width: 458.8px;
     padding-right: 15px; }
     .card .cost-container:after {
       content: '';
       display: block;
       position: absolute;
-      width: 75px;
+      width: 74px;
       transform: rotate(130deg);
       transform-origin: 1px 0px; }
     .card .cost-container .cost {
       margin: 5px 15px 5px 15px;
-      width: 45.75px;
-      height: 45.75px; }
+      width: 45.14px;
+      height: 45.14px; }
     .card .cost-container .cost + .cost::before {
       align-items: center;
       display: flex;
